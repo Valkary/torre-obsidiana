@@ -14,7 +14,9 @@ export default function MobileNav({}) {
             className="h-24"
         />
 
-        <div className="flex-grow w-full h-full flex flex-row justify-end items-center px-5">
+        <h1 className="flex-grow text-white uppercase tracking-widest">Torre Obsidiana</h1>
+
+        <div className="h-full flex flex-row justify-end items-center px-5">
             <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     </motion.div>
