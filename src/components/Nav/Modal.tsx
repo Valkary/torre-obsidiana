@@ -78,7 +78,7 @@ export default function Modal({ isOpen, setIsOpen }: Props) {
         animate={modalBodyControls}
     >
         <motion.div
-            className="h-full w-full flex flex-col items-center text-xl font-extrabold tracking-widest uppercase gap-24"
+            className="h-full w-full flex flex-col items-center text-xl font-extrabold tracking-widest uppercase gap-14"
         >
             {Links.map(({ name, url }, idx) => {
                 return <motion.a 
