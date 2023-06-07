@@ -4,9 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				negro: '#1D1F25',
-				gris: '#24759A',
-				cafe: '#F59D1C',
+				negro: '#040505',
+				gris: '#E2DEDC',
+				naranja: '#A3421D',
+				blanco: "#FEFFFF",
 			}
 		},
 	},

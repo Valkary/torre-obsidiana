@@ -73,7 +73,7 @@ export default function Modal({ isOpen, setIsOpen }: Props) {
     
     return <motion.div
         id="modal"
-        className="modal h-screen w-screen absolute top-0 left-0 z-20 bg-gris text-white pt-36 overflow-hidden"
+        className="modal h-screen w-screen absolute top-0 left-0 z-20 bg-negro/95 text-white pt-36 overflow-hidden"
         initial={{ opacity: 0 }}
         animate={modalBodyControls}
     >
