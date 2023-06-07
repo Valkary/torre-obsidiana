@@ -9,7 +9,7 @@ export default function Navbar({}) {
         <MobileNav /> :
         <WebNav />; 
 
-    return <div className="top-0 left-0 w-full h-[15vh] bg-naranja bnparadox">
+    return <div className="top-0 left-0 w-full h-[15vh] text-blanco bg-naranja bnparadox">
         {Nav}
     </div>
 }

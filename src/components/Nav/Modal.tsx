@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { motion, useAnimationControls, Variants } from "framer-motion";
+import { main_nav_links } from "../../types/links";
 
 type Props = {
     isOpen: boolean;
@@ -30,33 +31,6 @@ const container: Variants = {
     }
 }
 
-const Links = [
-    {
-        name: "Home",
-        url: "/#home"
-    },
-    {
-        name: "Departamentos",
-        url: "/#departamentos"
-    },
-    {
-        name: "Amenidades",
-        url: "/#amenidades"
-    },
-    {
-        name: "Ubicación",
-        url: "/#ubicacion"
-    },
-    {
-        name: "Galería",
-        url: "/#galeria"
-    },
-    {
-        name: "Contacto",
-        url: "/#contacto"
-    }
-]
-
 export default function Modal({ isOpen, setIsOpen }: Props) {
     const modalBodyControls = useAnimationControls();
     const linkBodyControls = useAnimationControls();
@@ -80,7 +54,7 @@ export default function Modal({ isOpen, setIsOpen }: Props) {
         <motion.div
             className="h-full w-full flex flex-col items-center text-xl font-extrabold tracking-widest uppercase gap-14"
         >
-            {Links.map(({ name, url }, idx) => {
+            {main_nav_links.map(({ name, url }, idx) => {
                 return <motion.a 
                     href={url}
                     key={url}

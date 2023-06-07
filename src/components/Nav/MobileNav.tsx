@@ -2,7 +2,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import HamburgerButton from "./HamburgerButton"
 import Modal from "./Modal";
-import LogoCompleto from "./Icons/LogoCompleto";
+import LogoCompleto from "../Icons/LogoCompleto";
 import { getColorValue } from "../../types/colors";
 
 const color_logo = getColorValue("blanco");
@@ -10,7 +10,7 @@ const color_logo = getColorValue("blanco");
 export default function MobileNav({}) {
     const [isOpen, setIsOpen] = useState(false);
 
-    return <motion.div className="flex flex-row text-negro text-2xl max-h-full overflow-hidden h-full items-center">
+    return <motion.div className="flex flex-row text-2xl max-h-full overflow-hidden h-full items-center">
         <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
 
         <div className="w-1/2">
