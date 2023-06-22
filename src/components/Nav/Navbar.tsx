@@ -5,7 +5,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 export default function Navbar({}) {
     const [width, _] = useWindowSize();
 
-    const Nav = width < 800 ?
+    const Nav = width < 1200 ?
         <MobileNav /> :
         <WebNav />; 
 
