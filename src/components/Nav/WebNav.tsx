@@ -33,7 +33,7 @@ export default function WebNav({}) {
         hoverRectControls.start(hover_rect_animations.move(x_offset)); 
     }
 
-    return <motion.div className="flex flex-row max-h-full overflow-hidden h-full items-center text-lg">
+    return <motion.div className="flex flex-row w-screen max-h-full overflow-hidden h-full items-center text-lg">
         <motion.div
             initial={{
                 x: "-100%",
