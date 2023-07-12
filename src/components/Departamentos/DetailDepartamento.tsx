@@ -5,6 +5,7 @@ import Bathroom from "../Icons/Bathroom";
 import Bedroom from "../Icons/Bedroom";
 import Check from "../Icons/Check";
 import Parking from "../Icons/Parking";
+import Terrace from "../Icons/Terrace";
 
 type Props = {
     departamento: typeof departamentos[string];
@@ -53,16 +54,22 @@ export default function DetailDepartamento({ departamento }: Props) {
                     <p>{departamento.estacionamiento} caj{departamento.estacionamiento >= 2 ? "ones" : "ón"}</p>
                 </div>
             </div>
-        </div>
 
-        {departamento.area_terraza &&
-            <div>{departamento.area_terraza} m2 de terraza</div>
-        }
+            {departamento.area_terraza &&
+                <div className="w-1/2 flex h-14 gap-2 items-center">
+                    <Terrace color="black" />
+                    <div className="flex flex-col text-left">
+                        <p className="text-gray-400 font-bold tracking-wider uppercase">Terraza</p>
+                        <p>{departamento.area_terraza} m<sup>2</sup></p>
+                    </div>
+                </div>
+            }
+        </div>
 
         <div className="w-full">
             <ul className="w-full flex flex-col items-center">
                 {departamento.cuartos.map((cuarto, id) =>
-                    <div className="w-1/2 flex h-8 gap-2 items-center">
+                    <div key={id} className="w-1/2 flex h-8 gap-2 items-center">
                         <Check color="black" />
                         <p className="text-black font-bold tracking-wide uppercase">{cuarto}</p>
                     </div>

@@ -5,7 +5,7 @@ export default function Botones({ }) {
 
     return <div className="w-full flex justify-evenly">
         {entries.map(departamento => {
-            return <a href={departamento[1].section}>
+            return <a key={departamento[1].section} href={departamento[1].section}>
                 <button
                     key={departamento[0]}
                     className="px-5 py-2 border-2 rounded-sm flex-wrap border-black w-32"

@@ -10,6 +10,6 @@ export default function Departamentos({}) {
                 lg:grid lg:max-w-7xl
             "
         >
-        {entries.map(entry => <DetailDepartamento departamento={entry[1]} />)}
+        {entries.map((entry, id) => <DetailDepartamento key={id} departamento={entry[1]} />)}
     </div>
 }
