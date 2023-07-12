@@ -10,7 +10,7 @@ const color_logo = getColorValue("blanco");
 export default function MobileNav({}) {
     const [isOpen, setIsOpen] = useState(false);
 
-    return <motion.div className="flex flex-row text-2xl max-h-full overflow-hidden h-full items-center px-10">
+    return <motion.div className="flex flex-row text-2xl w-full overflow-hidden h-full items-center px-10">
         <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
 
         <div className="w-24">
