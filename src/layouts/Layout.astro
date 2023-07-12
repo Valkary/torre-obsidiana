@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="snap-y snap-mandatory font-mono bg-blanco w-screen min-h-screen">
+	<body class="snap-y snap-mandatory font-mono bg-blanco w-screen max-w-full overflow-x-hidden min-h-screen">
 		<Navbar client:load/>
 		<slot />
 	</body>
