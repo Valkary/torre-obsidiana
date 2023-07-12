@@ -9,21 +9,46 @@ import Terrace from "../Icons/Terrace";
 
 type Props = {
     departamento: typeof departamentos[string];
+    section: string;
 }
 
-export default function DetailDepartamento({ departamento }: Props) {
+export default function DetailDepartamento({ departamento, section }: Props) {
 
-    return <div className="max-w-full w-full overflow-x-hidden">
-        <div className="w-full grid grid-cols-2 gap-y-2">
-            <div className="w-1/2 flex h-14 gap-2 items-center">
-                <Area color="black" />
-                <div className="flex flex-col text-left">
-                    <p className="text-gray-400 font-bold tracking-wider uppercase">Tamaño</p>
-                    <p>{departamento.area} m<sup>2</sup></p>
-                </div>
+    return <div
+        id={section}
+        className="
+            overflow-x-hidden flex flex-col justify-center items-center my-8
+            md:w-5/6
+            lg:h-[600px] lg:w-[600px]
+        "
+    >
+        <div className="w-full h-1/3 max-w-full overflow-clip flex items-center gap-2 rounded-lg">
+            <img
+                className="h-full object-center object-cover overflow-hidden"
+                src="/principalHero.png"
+                loading="lazy"
+                alt="Imagén departamento"
+            />
+            <div className="flex flex-col gap-2 w-1/3 h-full">
+                <img
+                    className="h-full object-center object-cover"
+                    src="/principalHero.png"
+                    loading="lazy"
+                    alt="Imagén departamento"
+                />
+                <img
+                    className="h-full object-center object-cover"
+                    src="/principalHero.png"
+                    loading="lazy"
+                    alt="Imagén departamento"
+                />
             </div>
+        </div>
 
-            <div className="w-1/2 flex h-14 gap-2 items-center">
+        <h2 className="w-full h-1/6 text-4xl font-bold uppercase tracking-widest flex items-center">Tipo {section}</h2>
+
+        <div className="w-full h-1/3 flex flex-row flex-wrap gap-2 justify-between mt-4">
+            <div className="w-1/3 flex h-14 gap-2 items-center">
                 <Apartment color="black" />
                 <div className="flex flex-col text-left">
                     <p className="text-gray-400 font-bold tracking-wider uppercase">Unidades</p>
@@ -31,7 +56,15 @@ export default function DetailDepartamento({ departamento }: Props) {
                 </div>
             </div>
 
-            <div className="w-1/2 flex h-14 gap-2 items-center">
+            <div className="w-1/3 flex h-14 gap-2 items-center">
+                <Area color="black" />
+                <div className="flex flex-col text-left">
+                    <p className="text-gray-400 font-bold tracking-wider uppercase">Tamaño</p>
+                    <p>{departamento.area} m<sup>2</sup></p>
+                </div>
+            </div>
+
+            <div className="w-1/3 flex h-14 gap-2 items-center">
                 <Bedroom color="black" />
                 <div className="flex flex-col text-left">
                     <p className="text-gray-400 font-bold tracking-wider uppercase">Recámaras</p>
@@ -39,7 +72,7 @@ export default function DetailDepartamento({ departamento }: Props) {
                 </div>
             </div>
 
-            <div className="w-1/2 flex h-14 gap-2 items-center">
+            <div className="w-1/3 flex h-14 gap-2 items-center">
                 <Bathroom color="black" />
                 <div className="flex flex-col text-left">
                     <p className="text-gray-400 font-bold tracking-wider uppercase">Baños</p>
@@ -47,7 +80,7 @@ export default function DetailDepartamento({ departamento }: Props) {
                 </div>
             </div>
 
-            <div className="w-1/2 flex h-14 gap-2 items-center">
+            <div className="w-1/3 flex h-14 gap-2 items-center">
                 <Parking color="black" />
                 <div className="flex flex-col text-left">
                     <p className="text-gray-400 font-bold tracking-wider uppercase">Estacionamiento</p>
@@ -55,26 +88,25 @@ export default function DetailDepartamento({ departamento }: Props) {
                 </div>
             </div>
 
-            {departamento.area_terraza &&
-                <div className="w-1/2 flex h-14 gap-2 items-center">
+            {departamento.area_terraza ?
+                <div className="w-1/3 flex h-14 gap-2 items-center">
                     <Terrace color="black" />
                     <div className="flex flex-col text-left">
                         <p className="text-gray-400 font-bold tracking-wider uppercase">Terraza</p>
                         <p>{departamento.area_terraza} m<sup>2</sup></p>
                     </div>
-                </div>
+                </div> :
+                <div className="w-1/3 flex h-14 gap-2 items-center" />
             }
         </div>
 
-        <div className="w-full">
-            <ul className="w-full flex flex-col items-center">
-                {departamento.cuartos.map((cuarto, id) =>
-                    <div key={id} className="w-1/2 flex h-8 gap-2 items-center">
-                        <Check color="black" />
-                        <p className="text-black font-bold tracking-wide uppercase">{cuarto}</p>
-                    </div>
-                )}
-            </ul>
-        </div>
+        <ul className="w-full h-1/6 max-w-full flex flex-wrap justify-start items-center gap-2">
+            {departamento.cuartos.map((cuarto, id) =>
+                <div key={id} className="flex h-8 items-center py-2 px-4 bg-gray-300 rounded-lg border-2 border-gray-500">
+                    <p className="text-black font-bold tracking-wide uppercase">{cuarto}</p>
+                </div>
+            )}
+        </ul>
+
     </div>
 }
