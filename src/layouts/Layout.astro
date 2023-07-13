@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="snap-y snap-mandatory font-mono bg-blanco w-screen max-w-full overflow-x-hidden min-h-screen">
+	<body class="snap-mandatory font-mono bg-blanco w-screen max-w-full overflow-x-hidden min-h-screen">
 		<Navbar client:load/>
 		<slot />
 	</body>
@@ -36,12 +36,12 @@ const { title } = Astro.props;
 	}
 	
 	.bnparadox {
-		font-family: 'BnParadox'
+		font-family: 'Gotham'
 	}
 	
 	@font-face {
-		font-family: 'BnParadox';
-		src: url('/fonts/bnparadox.woff') format('woff');
+		font-family: 'Gotham-Thin';
+		src: url('/fonts/Gotham-Medium.woff') format('woff');
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
