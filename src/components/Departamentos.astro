@@ -1,5 +1,6 @@
 ---
-import Botones from "./Departamentos/Botones";
+// import Botones from "./Departamentos/Botones";
+import Carrousel from "./Departamentos/Carrousel";
 import ListaDepartamentos from "./Departamentos/Departamentos";
 ---
 
@@ -7,6 +8,7 @@ import ListaDepartamentos from "./Departamentos/Departamentos";
   id="departamentos"
   class="min-h-screen w-screen snap-center flex flex-col justify-center items-center"  
 >
-  <Botones client:visible/>
+  <Carrousel client:idle/>
+  <!-- <Botones client:visible/> -->
   <ListaDepartamentos client:visible/>
 </section>
