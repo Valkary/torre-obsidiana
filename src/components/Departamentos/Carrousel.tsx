@@ -24,7 +24,7 @@ export default function Carrousel({ }) {
     return (
         <div
             id="carousel"
-            className="relative overflow-hidden rounded-lg"
+            className="relative overflow-hidden rounded-lg gotham"
             data-te-carousel-init
             data-te-carousel-slide>
             <div
