@@ -7,7 +7,10 @@ type Departamento = {
     img: string,
     section: string,
     area_terraza?: number,
-    cuartos: string[],
+    sala_comedor: boolean,
+    cuarto_lavado: boolean,
+    closet_lavado: boolean,
+    estudio: boolean,
 }
 
 export const departamentos: Record<string, Departamento> = {
@@ -19,10 +22,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 2,
         section: "#departamento_a",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado"
-        ]
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: false,
     },
     B: {
         area: 82.3,
@@ -32,10 +35,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 2,
         section: "#departamento_b",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado"
-        ]
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: false,
     },
     C1: {
         area: 62.97,
@@ -45,11 +48,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 1,
         section: "#departamento_c1",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado",
-            "estudio"
-        ]
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: true,
     },
     C2: {
         area: 62.47,
@@ -59,10 +61,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 1,
         section: "#departamento_c2",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado",
-        ]
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: false,
     },
     C3: {
         area: 63.43,
@@ -72,10 +74,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 1,
         section: "#departamento_c3",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado",
-        ]
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: false,
     },
     D: {
         area: 60.41,
@@ -85,10 +87,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 1,
         section: "#departamento_d",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "clóset de lavado"
-        ]
+        sala_comedor: true,
+        cuarto_lavado: false,
+        closet_lavado: true,
+        estudio: false,
     },
     E: {
         area: 82.07,
@@ -98,10 +100,10 @@ export const departamentos: Record<string, Departamento> = {
         estacionamiento: 2,
         section: "#departamento_d",
         img: "",
-        cuartos: [
-            "sala - comedor",
-            "cuarto de lavado",
-        ],
+        sala_comedor: true,
+        cuarto_lavado: true,
+        closet_lavado: false,
+        estudio: false,
         area_terraza: 26.33,
     },
 }
