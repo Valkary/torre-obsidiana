@@ -1,6 +1,6 @@
 <section id="Amenidades" class="w-full h-[100vh]" style="background-color: rgb(254,255,255);">
     <div class="content">
-        <h1 class="title">Amenidades</h1>
+        <h1 class="title">AMENIDADES</h1>
 
 <div class = "grid-container">
     
@@ -20,13 +20,13 @@
         <img src="/cowork.png" alt="Descripción de la imagen">
         Coworking</div>
     <div>
-        <img src="/locker.png" alt="Descripción de la imagen" style="height: 70%; width: 60%;">
+        <img src="/locker.png" alt="Descripción de la imagen" style="height: 80%; width: 60%;">
         E-Lockers</div>
     <div>
         <img src="/salon.png" alt="Descripción de la imagen" style="height: 80%">
         Salon de Usos Multiples</div>
     <div>
-        <img src="/terraza.png" alt="Descripción de la imagen" style="height: 80%">
+        <img src="/terrace.png" alt="Descripción de la imagen" style="height: 80%">
         Terraza</div>
 </div>
 </div>
@@ -48,7 +48,7 @@
 }
      @font-face {
         font-family: 'MiFuente';
-        src: url('fonts/bnparadox-webfont.woff') format('woff');
+        src: url('fonts/Gotham-Book.woff') format('woff');
 }
 .center {
   display: flex;
@@ -58,39 +58,28 @@
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+   
     grid-auto-rows: 1fr;
-    gap: 10px;
+    column-gap: 0px;
+    row-gap: 60px;
     background-color: rgb(254,255,255);
 }
-.grid-container div {
-    background-color: rgb(254,255,255);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: 'MiFuente', sans-serif;
-    font-size: larger;
-    height: 100%;
-}
-
 .grid-container img {
-    width: 70%;
-    height: 70%;
+    max-width: 40%;
+    max-height: 100%;
     object-fit: cover;
 }
 
 </style>
 </section>
-=======
+======
 
 
 <style>
     .grid-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 350px 360px 360px 350px;
         grid-auto-rows: 1fr;
         gap: 10px;
         background-color: rgb(254, 255, 255);
@@ -101,15 +90,18 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
+        font-family: 'MiFuente', sans-serif;
         box-sizing: border-box;
         font-size: larger;
         height: 100%;
+        
+       
     }
 
-    .grid-container img {
-        width: 70%;
-        height: 70%;
+    .grid-container img {  
+    width: 60%;
+    height: 100%;
         object-fit: cover;
     }
 </style>
