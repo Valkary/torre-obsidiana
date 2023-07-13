@@ -24,7 +24,7 @@ export default function Carrousel({ }) {
     return (
         <div
             id="carousel"
-            className="relative"
+            className="relative overflow-hidden rounded-lg"
             data-te-carousel-init
             data-te-carousel-slide>
             <div
@@ -56,7 +56,9 @@ export default function Carrousel({ }) {
                         <img
                             src={slide_obj}
                             className="block w-full"
-                            alt="..." />
+                            alt="..."
+                            loading="lazy"
+                        />
                         <div
                             className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                             <h5 className="text-xl">First slide label</h5>
