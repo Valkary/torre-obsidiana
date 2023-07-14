@@ -20,9 +20,9 @@ export default function DetailDepartamento({ departamento, section }: Props) {
     return <div
         id={section}
         className="
-            overflow-x-hidden flex flex-col justify-center items-center my-8 shadow-md p-5 rounded-lg w-full
-            md:w-5/6
-            lg:w-[600px] lg:h-[600px]
+            overflow-x-hidden flex flex-col justify-center items-center shadow-md p-5 rounded-lg w-full
+            md:w-5/6 md:h-5/6
+            lg:w-[600px] lg:h-[600px] lg:flex-grow
         "
     >
         <div className="w-full h-[66px] flex items-center uppercase">
@@ -33,7 +33,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
             </div>
         </div>
 
-        <div className="flex w-full">
+        <div className="flex w-full h-full">
             <div className="w-1/2 flex-col flex gap-2 mt-4">
                 <div className="w-full flex h-14 gap-2 items-center">
                     <Apartment color="black" />
