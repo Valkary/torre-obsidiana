@@ -1,24 +1,28 @@
 import { useState } from "react"
 
-const slides = [
-    "https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg",
-    "https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg",
-    "https://tecdn.b-cdn.net/img/Photos/Slides/img%20(25).jpg",
-]
+export type Slides = {
+    title: string,
+    legend: string,
+    img: string,
+}
 
-export default function Carrousel({ }) {
-    const [slide, setSlide] = useState(0);
+type Props = {
+    slides: Slides[]
+}
+
+export default function Carrousel({ slides }: Props) {
+    const [currSlide, setCurrSlide] = useState(0);
 
     function prevSlide() {
-        slide === 0 ?
-            setSlide(slides.length - 1) :
-            setSlide((prevSlide) => prevSlide -= 1);
+        currSlide === 0 ?
+            setCurrSlide(slides.length - 1) :
+            setCurrSlide((prevSlide) => prevSlide -= 1);
     }
 
     function nextSlide() {
-        slide === slides.length - 1 ?
-            setSlide(0) :
-            setSlide((prevSlide) => prevSlide += 1);
+        currSlide === slides.length - 1 ?
+            setCurrSlide(0) :
+            setCurrSlide((prevSlide) => prevSlide += 1);
     }
 
     return (
@@ -36,34 +40,34 @@ export default function Carrousel({ }) {
                     data-te-target="#carousel"
                     data-te-slide-to={id}
                     data-te-carousel-active
-                    className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${slide === id ? "opacity-95" : "opacity-50"}`}
+                    className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none ${currSlide === id ? "opacity-95" : "opacity-50"}`}
                     aria-current="true"
                     aria-label={`Slide ${id}`}
                     key={id}
-                    onClick={() => setSlide(id)}
+                    onClick={() => setCurrSlide(id)}
                 />)}
             </div>
             <div
                 className="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
             >
-                {slides.map((slide_obj, id) =>
+                {slides.map((slide, id) =>
                     <div
-                        className={`relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none ${slide === id ? "block" : "hidden"}`}
+                        className={`relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none ${currSlide === id ? "block" : "hidden"}`}
                         data-te-carousel-active
                         data-te-carousel-item
                         key={id}
                     >
                         <img
-                            src={slide_obj}
+                            src={slide.img}
                             className="block w-full"
                             alt="..."
                             loading="lazy"
                         />
                         <div
                             className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                            <h5 className="text-xl">First slide label</h5>
+                            <h5 className="text-xl">{slide.title}</h5>
                             <p>
-                                Some representative placeholder content for the first slide.
+                                {slide.legend}
                             </p>
                         </div>
                     </div>

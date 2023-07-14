@@ -1,14 +1,22 @@
 ---
 // import Botones from "./Departamentos/Botones";
-import Carrousel from "./Departamentos/Carrousel";
+import Carrousel, { type Slides } from "./Departamentos/Carrousel";
 import ListaDepartamentos from "./Departamentos/Departamentos";
+
+const carrousel_slides: Slides[] = [
+  {
+    title: "Primer slide",
+    legend: "leyenda priver slide",
+    img: ""
+  }
+]
 ---
 
 <section
   id="departamentos"
   class="min-h-screen w-full snap-center flex flex-col justify-center items-center gotham"  
 >
-  <Carrousel client:idle/>
+  <Carrousel slides={carrousel_slides} client:idle/>
   <!-- <Botones client:visible/> -->
   <ListaDepartamentos client:visible/>
 </section>
