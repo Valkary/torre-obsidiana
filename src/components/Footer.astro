@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <footer>
+        <div class="footer-content">
+            <h3>*LOGO TORRE OBSIDIANA*</h3>
+            <p>WhatsApp: (33) 3968 1326</p>
+            <p>Oficina de ventas: (33) 1763 8744</p>
+            <p>torreobsidiana@hotmail.com</p>
+            <p>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jal.</p>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 codeOpacity. designed by <span>nethunt</span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #feffff;
+}
+@font-face {
+        font-family: 'MiFuente';
+        src: url('fonts/Gotham-Book.woff') format('woff');
+}
+footer{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #040505;
+    height: auto;
+    width: 100vw;
+    font-family: 'MiFuente', sans-serif;
+    padding-top: 40px;
+    color: #FEFFFF;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: red;
+}
+
+.footer-bottom{
+    background: #111111;
+    width: 100vw;
+    padding: 1px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    opacity: .3;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .3;
+    font-weight: 200;
+} 
+</style>
