@@ -3,21 +3,22 @@
 import Carrousel, { type Slides } from "./Departamentos/Carrousel";
 import ListaDepartamentos from "./Departamentos/Departamentos";
 
-
 const carrousel_slides: Slides[] = [
   {
     title: "Primer slide",
     legend: "leyenda priver slide",
-    img: ""
-  }
-]
+    img: "",
+  },
+];
 ---
 
 <section
   id="departamentos"
-  class="min-h-screen w-full snap-center flex flex-col justify-center items-center gotham"  
+  class="min-h-screen w-full snap-center flex flex-col justify-center items-center gotham"
 >
-  <Carrousel slides={carrousel_slides} client:idle/>
-  <!-- <Botones client:visible/> -->
-  <ListaDepartamentos client:visible/>
+  <h3 class="tracking-wider text-3xl font-bold my-5 uppercase">
+    Tu siguiente hogar
+  </h3>
+  <Carrousel slides={carrousel_slides} client:idle />
+  <ListaDepartamentos client:visible />
 </section>
