@@ -1,102 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>footer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <footer>
-        
-        <div class="footer-content">
-            <div class="footer-title">LOGO </div>
-            <div class="column">
-                
-               
-            </div>
-            <div class="column">
-                <p>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jal.</p>
-            </div>
-            <div class="column">
-                <p>Oficina de ventas: (33) 1763 8744</p>
-                <p>Tel. via WhatsApp: (33) 3968 1326</p>
-            </div>
-            <div class="column">
-                <p>torreobsidiana@hotmail.com</p>
-            </div>
+<footer>
+    <div class="footer-content gotham">
+        <div class="footer-title">LOGO</div>
+        <div class="column"></div>
+        <div class="column">
+            <p>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jal.</p>
         </div>
-    </footer>
-</body>
-</html>
-
+        <div class="column">
+            <p>Oficina de ventas: (33) 1763 8744</p>
+            <p>Tel. via WhatsApp: (33) 3968 1326</p>
+        </div>
+        <div class="column">
+            <p>torreobsidiana@hotmail.com</p>
+        </div>
+    </div>
+</footer>
 
 <style>
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background: #feffff;
-}
-
-@font-face {
-    font-family: 'MiFuente';
-    src: url('fonts/Gotham-Book.woff') format('woff');
-}
-
-footer{
-    background: #040505;
-    color: #FEFFFF;
-    padding-top: 20px;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: flex;
-    gap: 10px;
-    margin-left: auto;
-}
-
-.footer-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.column{
-    width: 30%;
-    padding: 10px;
-}
-
-.column p{
-    line-height: 30px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-inline: 10px;
-    margin-right:0px;
-   
-    font-family: 'MiFuente', 'sans-serif';
-}
-
-@media only screen and (max-width: 600px) {
-    .footer-content{
-        flex-direction: column;
-        align-items: center;
+    footer {
+        background: #040505;
+        color: #feffff;
+        padding-top: 20px;
     }
 
-    .column{
-        width: 50%;
-        padding: 0;
+    .footer-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: flex;
+        gap: 10px;
+        margin-left: auto;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        font-weight: bold;
         text-align: center;
+        margin-bottom: 20px;
     }
-}
+
+    .column {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .column p {
+        line-height: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-inline: 10px;
+        margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column {
+            width: 50%;
+            padding: 0;
+            text-align: center;
+        }
+    }
 </style>

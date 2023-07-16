@@ -17,7 +17,7 @@ export const main_nav_links = [
     },
     {
         name: "Galería",
-        url: "/#galeria"
+        url: "/galeria"
     },
     {
         name: "Contacto",

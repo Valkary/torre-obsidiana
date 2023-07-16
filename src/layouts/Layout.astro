@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Nav/Navbar';
+import Navbar from "../components/Nav/Navbar";
 
 export interface Props {
 	title: string;
@@ -12,73 +12,83 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Convirtie Torre Obsidiana en tu nuevo hogar!">
+		<meta
+			name="description"
+			content="Convirtie Torre Obsidiana en tu nuevo hogar!"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="snap-mandatory font-mono gotham bg-blanco w-screen max-w-full overflow-x-hidden min-h-screen">
-		<Navbar client:load/>
+	<body
+		class="snap-mandatory font-mono gotham bg-blanco w-screen max-w-full overflow-x-hidden min-h-screen"
+	>
+		<Navbar client:load />
 		<slot />
+		<a
+			href="https://api.whatsapp.com/send?phone=3339681326"
+			class="whatsapp-float"
+			target="_blank"
+		>
+			<img src="whats.png" alt="WhatsApp" />
+		</a>
 	</body>
 </html>
 
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			#da62c4 30%,
+			white 60%
+		);
 	}
-	
+
 	html {
 		font-family: "Gotham";
-		background-color: #F6F6F6;
+		background-color: #f6f6f6;
 	}
-	
+
 	@font-face {
 		font-family: "Gotham";
-        src: url("/fonts/Gotham-Book.woff") format("woff");
-    }
-	
+		src: url("/fonts/Gotham-Book.woff") format("woff");
+	}
+
 	@font-face {
-		font-family: 'Gotham-Thin';
-		src: url('/fonts/Gotham-Medium.woff') format('woff');
+		font-family: "Gotham-Thin";
+		src: url("/fonts/Gotham-Medium.woff") format("woff");
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
 	}
 
 	.gotham {
-		font-family: "Gotham"
+		font-family: "Gotham";
 	}
 
 	.gotham-thin {
 		font-family: "Gotham-Thin";
 	}
-</style>
 
-<a href="https://api.whatsapp.com/send?phone=3339681326" class="whatsapp-float" target="_blank">
-	<img src="whats.png" alt="WhatsApp">
-  </a>
-  
-<style>
-  .whatsapp-float {
-	position: fixed;
-	bottom: 30px;
-	right:30px;
-	z-index: 9999;
-  }
-  
-  .whatsapp-float img {
-	width: 70px; 
-	height: 70px;
-	border-radius: 100%;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-	transition: transform 0.6s ease-in-out;
-  }
-  
-  .whatsapp-float img:hover {
-	transform: scale(1.3);
-  }
-  
-</style> 
+	.whatsapp-float {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 9999;
+	}
+
+	.whatsapp-float img {
+		width: 70px;
+		height: 70px;
+		border-radius: 100%;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+		transition: transform 0.6s ease-in-out;
+	}
+
+	.whatsapp-float img:hover {
+		transform: scale(1.3);
+	}
+</style>
