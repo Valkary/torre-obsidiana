@@ -13,6 +13,7 @@ type Departamento = {
     estudio: boolean,
 }
 
+
 export const departamentos: Record<string, Departamento> = {
     A: {
         area: 75.68,
