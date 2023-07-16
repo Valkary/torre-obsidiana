@@ -10,62 +10,90 @@
 <body>
     <footer>
         <div class="footer-content">
-            <h3>*LOGO TORRE OBSIDIANA*</h3>
-            <p>WhatsApp: (33) 3968 1326</p>
-            <p>Oficina de ventas: (33) 1763 8744</p>
-            <p>torreobsidiana@hotmail.com</p>
-            <p>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jal.</p>
-            </ul>
+            <div class="footer-title">LOGO TORRE OBSIDIANA</div>
+            <div class="column">
+                <p>Av. Obsidiana #2552</p>
+                <p> Residencial Victoria, Zapopan, Jal.</p>
+            </div>
+            <div class="column">
+                <p>Oficina de ventas: (33) 1763 8744</p>
+            </div>
+            <div class="column">
+                <p>WhatsApp: (33) 3968 1326</p>
+            </div>
+            <div class="column">
+                <p>torreobsidiana@hotmail.com</p>
+            </div>
         </div>
     </footer>
 </body>
 </html>
 
 <style>
-   *{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background: #feffff;
 }
+
 @font-face {
-        font-family: 'MiFuente';
-        src: url('fonts/Gotham-Book.woff') format('woff');
+    font-family: 'MiFuente';
+    src: url('fonts/Gotham-Book.woff') format('woff');
 }
+
 footer{
-    
     bottom: 0;
     left: 0;
     right: 0;
     background: #040505;
-    height: auto;
+    height: 15vw;
     width: 100vw;
     font-family: 'MiFuente', sans-serif;
-    padding-top: 80px;
+    padding-top: 20px;
     color: #FEFFFF;
-}
-.footer-content{
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:18px;
+    max-width: 100vw;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 80px;
+    text-align: right;
+    align-items: flex-start;
+}
+
+.footer-title h3{
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
-}
-.footer-content h3{
-    font-size: 2.5rem;
-    font-weight: 800;
     
-    text-transform: capitalize;
-    line-height: 3rem;
 }
-.footer-content p{
-    
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
+
+.footer-title {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1000px;
+}
+
+
+.column p{
+    line-height: 29px;
     font-size: 16px;
+    margin-right: 50px;
+   
+    
 }
+ 
 
 </style>
