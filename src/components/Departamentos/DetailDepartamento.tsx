@@ -107,7 +107,13 @@ export default function DetailDepartamento({ departamento, section }: Props) {
             </div>
 
             <div className="flex-grow bg-red-600 rounded-lg">
-
+                <img
+                    src={departamento.img}
+                    loading="lazy"
+                    alt={"Imagén departamento"}
+                    width={"100%"}
+                    className="object-cover object-center w-full"
+                />
             </div>
         </div>
 
