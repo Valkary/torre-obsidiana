@@ -22,7 +22,7 @@ export const departamentos: Record<string, Departamento> = {
         bathrooms: 2,
         estacionamiento: 2,
         section: "#departamento_a",
-        img: "/public/depa.webp",
+        img: "public/depa.webp",
         sala_comedor: true,
         cuarto_lavado: true,
         closet_lavado: false,
