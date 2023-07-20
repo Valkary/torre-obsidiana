@@ -8,6 +8,7 @@ export type Slides = {
 
 type Props = {
     slides: Slides[]
+    
 }
 
 export default function Carrousel({ slides }: Props) {

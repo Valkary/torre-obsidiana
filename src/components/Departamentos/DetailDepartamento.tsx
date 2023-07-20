@@ -22,7 +22,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
         className="
             overflow-x-hidden flex flex-col justify-center items-center shadow-md p-5 rounded-lg w-full
             md:w-5/6 md:h-5/6
-            lg:w-[600px] lg:h-[600px] lg:flex-grow
+            lg:w-[600px] lg:h-[550px] lg:flex-grow
         "
     >
         <div className="w-full h-[66px] flex items-center uppercase">
@@ -106,12 +106,13 @@ export default function DetailDepartamento({ departamento, section }: Props) {
                 }
             </div>
 
-            <div className="flex-grow bg-red-600 rounded-lg">
+            <div className="flex-grow rounded-lg">
                 <img
                     src={departamento.img}
                     loading="lazy"
                     alt={"Imagén departamento"}
                     width={"100%"}
+                    
                     className="object-cover object-center w-full"
                 />
             </div>
