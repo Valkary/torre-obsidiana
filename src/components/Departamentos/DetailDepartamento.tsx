@@ -22,7 +22,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
         className="
             overflow-x-hidden flex flex-col justify-center items-center shadow-md p-5 rounded-lg w-full
             md:w-5/6 md:h-5/6
-            lg:w-[600px] lg:h-[550px] lg:flex-grow
+            lg:w-[600px] lg:h-[550px] lg:flex-grow lg:overflow-y-hidden
         "
     >
         <div className="w-full h-[66px] flex items-center uppercase">
@@ -33,8 +33,8 @@ export default function DetailDepartamento({ departamento, section }: Props) {
             </div>
         </div>
 
-        <div className="flex w-full h-full">
-            <div className="w-1/2 flex-col flex gap-2 mt-4">
+        <div className="flex flex-col md:flex-row w-full h-full">
+            <div className="w-full md:w-1/2 flex-col flex gap-2 mt-4">
                 <div className="w-full flex h-14 gap-2 items-center">
                     <Apartment color="black" />
                     <div className="flex flex-col text-left">
@@ -112,7 +112,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
                     loading="lazy"
                     alt={"Imagén departamento"}
                     width={"100%"}
-                    
+
                     className="object-cover object-center w-full"
                 />
             </div>
