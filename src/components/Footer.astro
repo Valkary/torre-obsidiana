@@ -1,74 +1,23 @@
-<footer id="contacto">
-  <div class="footer-content gotham items-center">
-    <div class="w-full md:w-1/3 lg:w-1/2">
+<footer
+  id="contacto"
+  class="gotham w-full flex items-center justify-center bg-black text-white h-full md:h-1/5"
+>
+  <div
+    class="max-w-7xl h-full flex flex-col lg:flex-row justify-center items-center"
+  >
+    <div class="w-full md:w-1/2 lg:w-1/4">
       <img
         loading="lazy"
         src="/logos/logo_transparente.png"
-        width="100%"
+        height="50%"
         class="object-cover object-center"
       />
     </div>
-    <div class="column">
-      <p>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jal.</p>
-    </div>
-    <div class="column">
-      <p>Oficina de ventas: (33) 1763 8744</p>
-      <p>Tel. via WhatsApp: (33) 3968 1326</p>
-    </div>
-    <div class="column">
-      <p>torreobsidiana@hotmail.com</p>
+    <div class="flex flex-col gap-4 text-lg">
+      <p>Av. Obsidiana #2552, Residencial</p>
+      <p>Victoria, Zapopan, Jal.</p>
+      <p>Teléfono: (33) 3218 0547</p>
+      <p>Correo: informes@torreobsidiana.com</p>
     </div>
   </div>
 </footer>
-
-<style>
-  footer {
-    background: #040505;
-    color: #feffff;
-    padding-top: 20px;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: flex;
-    gap: 10px;
-    margin-left: auto;
-  }
-
-  .footer-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .column {
-    width: 30%;
-    padding: 10px;
-  }
-
-  .column p {
-    line-height: 30px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-inline: 10px;
-    margin-right: 0px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .column {
-      width: 50%;
-      padding: 0;
-      text-align: center;
-    }
-  }
-</style>

@@ -1,96 +1,153 @@
-<section
-    id="amenidades"
-    class="w-full flex justify-center items-center gotham max-w-full min-h-screen"
-    style="background-color: rgb(254,255,255);"
->
-    <div class="w-full h-full lg:max-w-7xl lg:container text-center uppercase">
-        <h3 class="tracking-wider text-3xl font-bold my-5">
-            Tus mejores momentos, en los mejores espacios
-        </h3>
+---
+import type { Slides } from "./Departamentos/Carrousel";
+import Carrousel from "./Departamentos/Carrousel";
 
-        <div
-            class="w-full justify-center items-center flex flex-col md:flex-row md:flex-wrap gap-2 py-5 lg:gap-4"
-        >
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/ciclo.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Ciclopuerto</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/lobby.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Lobby</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/gym.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Gimnasio</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/pet.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Pet Park</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/cowork.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Coworking</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/locker.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>E-Lockers</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/salon.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Salon de Usos Multiples</p>
-            </div>
-            <div
-                class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
-            >
-                <img
-                    src="/terrace.webp"
-                    alt="Descripción de la imagen"
-                    class="h-[90%] object-center object-cover flex-grow"
-                />
-                <p>Terraza</p>
-            </div>
-        </div>
+const carrousel_slides: Slides[] = [
+  {
+    title: "",
+    legend: "",
+    img: "/LOBBY_1.0005.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/LOBBY_1.0003.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/COWORKING_1.0001.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/COWORKING_1.0003.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/SOCIAL_1.0004.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/GYM_1.0002.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/TERRAZA_1.0001.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/TERRAZA_1.0002.png",
+  },
+  {
+    title: "",
+    legend: "",
+    img: "/PETPARK_1.0001.png",
+  },
+];
+---
+
+<section
+  id="amenidades"
+  class="w-full flex flex-col justify-center items-center gotham max-w-full min-h-screen"
+  style="background-color: rgb(254,255,255);"
+>
+  <h3 class="tracking-wider text-3xl font-bold my-5 uppercase">
+    Tus mejores momentos, en los mejores espacios
+  </h3>
+
+  <Carrousel slides={carrousel_slides} client:load />
+
+  <div
+    class="w-full h-full lg:max-w-7xl lg:container text-center uppercase my-10"
+  >
+    <div
+      class="w-full justify-center items-center flex flex-col md:flex-row md:flex-wrap gap-2 py-5 lg:gap-4"
+    >
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/ciclo.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Ciclopuerto</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/lobby.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Lobby</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/gym.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Gimnasio</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/pet.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Pet Park</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/cowork.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Coworking</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/locker.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>E-Lockers</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/salon.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Salon de Usos Multiples</p>
+      </div>
+      <div
+        class="w-full md:w-1/3 lg:w-1/5 h-[150px] flex flex-col items-center justify-center"
+      >
+        <img
+          src="/terrace.webp"
+          alt="Descripción de la imagen"
+          class="h-[90%] object-center object-cover flex-grow"
+        />
+        <p>Terraza</p>
+      </div>
     </div>
+  </div>
 </section>

@@ -47,7 +47,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
                     <Bedroom color="black" />
                     <div className="flex flex-col text-left">
                         <p className="text-gray-400 font-bold tracking-wider uppercase">Recámaras</p>
-                        <p>{departamento.recamaras} cuarto{departamento.recamaras >= 2 ? "s" : ""}</p>
+                        <p>{departamento.recamaras} recámara{departamento.recamaras >= 2 ? "s" : ""}</p>
                     </div>
                 </div>
 

@@ -8,7 +8,7 @@ export type Slides = {
 
 type Props = {
     slides: Slides[]
-    
+
 }
 
 export default function Carrousel({ slides }: Props) {
@@ -29,7 +29,7 @@ export default function Carrousel({ slides }: Props) {
     return (
         <div
             id="carousel"
-            className="relative overflow-hidden rounded-lg gotham"
+            className="relative rounded-lg gotham h-full md:h-[350px] lg:h-[500px] max-w-7xl"
             data-te-carousel-init
             data-te-carousel-slide>
             <div
@@ -49,7 +49,7 @@ export default function Carrousel({ slides }: Props) {
                 />)}
             </div>
             <div
-                className="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+                className="relative h-full overflow-hidden after:clear-both after:block after:content-['']"
             >
                 {slides.map((slide, id) =>
                     <div
@@ -60,9 +60,8 @@ export default function Carrousel({ slides }: Props) {
                     >
                         <img
                             src={slide.img}
-                            className="block w-full"
+                            className="h-full object-cover object-bottom"
                             alt="..."
-                            loading="lazy"
                         />
                         <div
                             className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
