@@ -1,9 +1,7 @@
 import type { departamentos } from "../../types/departamentos"
 import Apartment from "../Icons/Apartment";
-import Area from "../Icons/Area";
 import Bathroom from "../Icons/Bathroom";
 import Bedroom from "../Icons/Bedroom";
-import Check from "../Icons/Check";
 import DiningRoom from "../Icons/DiningRoom";
 import IronBoard from "../Icons/IronBoard";
 import Parking from "../Icons/Parking";
@@ -20,7 +18,7 @@ export default function DetailDepartamento({ departamento, section }: Props) {
     return <div
         id={section}
         className="
-            overflow-x-hidden flex flex-col justify-center items-center shadow-md p-5 rounded-lg w-full
+            overflow-x-hidden flex flex-col justify-center items-center shadow-md px-5 py-8 rounded-lg w-full bg-white
             md:w-5/6 md:h-5/6
             lg:w-[600px] lg:h-[550px] lg:flex-grow lg:overflow-y-hidden
         "
