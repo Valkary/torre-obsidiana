@@ -15,13 +15,10 @@
     <div class="container">
         <form>
             <h1>CONTÁCTANOS</h1>
-            <input type="text" id="Nombre" placeholder="Nombre" required>
-            <input type="text" id="Apellido" placeholder="Apellido" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="mobile" placeholder="Tel." required>
-            <h4>Escribe aqui tu mensaje...</h4>
-            <textarea required></textarea>
-            <input type="submit" value="Enviar" id="button">
+            <h2>Av. Obsidiana #2552, Residencial Victoria, Zapopan, Jalisco</h2>
+            <h3>Tel. / Whats.ㅤㅤㅤㅤ(33) 3218 0547</h3>
+            <h4>Correo: informes@torreobsidiana.com</h4>
+            <a href= "/contactos.png"download class="download-btn">Descarga nuestro brochure</a>
         </form>
     </div>
 </body>
@@ -30,18 +27,39 @@
 <style>
 *{
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
+
+.download-btn{
+    background-color: white;
+    color: black;
+    padding: 9px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.container form a{
+    padding:8px 10px;
+    padding-bottom: 1px;
+    padding-top: 10px;
+
+}
+.download-btn:hover{
+    background-color: grey;
+}
+.container form a {
+  width:50%; /* Opcional: hacer que el botón ocupe todo el ancho en dispositivos móviles */
+  margin: 10px auto; /* Centrar el botón en dispositivos móviles */
+  text-align:center;
+}
+
 
 .container{
     min-height: 100vh;
-   
     display: flex;
     justify-content: center;
     align-items: center;
-    background: 
 }
 
 .container form{
@@ -58,56 +76,47 @@
 
 .container form h1{
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 30px;
     margin-top: 28px;
     width: 500px;
     text-align: center;
 }
 
-.container form input{
-    width: 290px;
-    height: 40px;
+.container form h2{
+    width: 500px;
+    height: 50px;
     padding-left: 10px;
     outline: none;
     border: none;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 3px;
     background: none;
-    border-bottom: 2px solid #fff;
+    
 }
 
-.container form input::placeholder{
-    color: #fff;
+.container form h3{
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 3px;
+    background: none;
+    
 }
 
 .container form h4{
-    color: #fff;
-    font-weight: 300;
-    width: 600px;
-    margin-top: 20px;
-}
-
-.container form textarea{
-    background: none;
-    border: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    font-weight: 200;
-    font-size: 15px;
-    padding: 10px;
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
     outline: none;
-    min-width: 600px;
-    max-width: 600px;
-    min-height: 80px;
-    max-height: 80px;
-}
-
-textarea::-webkit-scrollbar{
-    width: 1em;
-}
-
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgba(194,194,194,0.713);
+    border: none;
+    font-size: 18px;
+    margin-bottom: 3px;
+    background: none;
+    
 }
 
 .container form #button{
@@ -117,11 +126,11 @@ textarea::-webkit-scrollbar-thumb{
     margin-top: 20px;
     font-weight: 600;
     font-size: 20px;
-    color: #333;
+    color: black;
     width: 100px;
-    padding: 0;
+    padding: 5px;
     margin-right: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     transition: 0.3s;
 }
 
@@ -145,6 +154,19 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 30px;
   }
 
+  .container form h2 {
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .container form h3 {
+    width: 100%;
+    font-size: 15px;
+    
+    padding:28px 20px;
+  }
+
   .container form #button {
     font-size: 16px; /* Ajusta el tamaño de la fuente */
     width: auto; /* Deja que el ancho se adapte al contenido */
@@ -153,22 +175,15 @@ textarea::-webkit-scrollbar-thumb{
 
   .container form h4 {
     width: 100%;
-    text-align: center;
-    margin: 10px 0; /* Agrega margen superior e inferior para el texto */
+    font-size: 15px;
+    padding:15px 20px;
   }
 }
 
-.container form textarea{
-    min-width: 81%; 
-    height: 60px;
-    text-align: center; /* Centra el texto en dispositivos móviles */
-}
-
-
-.container form #button {
+.container form a {
   /* ... otros estilos ... */
-  width:20%; /* Opcional: hacer que el botón ocupe todo el ancho en dispositivos móviles */
-  margin: 10px auto; /* Centrar el botón en dispositivos móviles */
+  width:90%; /* Opcional: hacer que el botón ocupe todo el ancho en dispositivos móviles */
+  margin: 15px auto; /* Centrar el botón en dispositivos móviles */
 }
 
 </style>
