@@ -1,4 +1,4 @@
-<footer
+<contacto
   id="contacto"
   class="gotham w-full flex items-center justify-center bg-black text-white h-full md:h-1/5"
   style="background-image: url('/contactos.png'); background-size: cover; background-position: center;"
@@ -25,7 +25,7 @@
         </form>
     </div>
 </body>
-</footer>
+</contacto>
 
 <style>
 *{
@@ -77,12 +77,7 @@
 }
 
 .container form input::placeholder{
-    color: #ddd;
-}
-
-.container form #lastName,
-.container form #mobile{
-    margin-left: 20px;
+    color: #fff;
 }
 
 .container form h4{
@@ -141,7 +136,7 @@ textarea::-webkit-scrollbar-thumb{
 
   .container form {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
   }
 
@@ -156,7 +151,6 @@ textarea::-webkit-scrollbar-thumb{
     margin: 10px auto; /* Centra el botón */
   }
 
-  @media (max-width: 768px) {
   .container form h4 {
     width: 100%;
     text-align: center;
@@ -164,8 +158,12 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-
+.container form textarea{
+    min-width: 81%; 
+    height: 60px;
+    text-align: center; /* Centra el texto en dispositivos móviles */
 }
+
 
 .container form #button {
   /* ... otros estilos ... */
