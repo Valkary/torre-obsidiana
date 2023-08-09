@@ -21,6 +21,6 @@ export const main_nav_links = [
     },
     {
         name: "Contacto",
-        url: "/#contacto"
+        url: "/contact"
     }
 ];
