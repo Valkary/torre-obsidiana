@@ -5,9 +5,11 @@ import Amenidades from "../components/Amenidades.astro";
 import Objetivo from "../components/Objetivo.astro";
 import Departamentos from "../components/Departamentos.astro";
 import Location from "../components/Location.astro";
+import Modal from "../components/Departamentos/Modal";
 ---
 
 <Layout title="Torre Obsidiana">
+  <Modal client:load/>
   <Hero />
   <Objetivo />
   <Departamentos />

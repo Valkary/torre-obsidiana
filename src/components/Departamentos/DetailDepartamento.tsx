@@ -12,9 +12,11 @@ import WashingMachine from "../Icons/WashingMachine";
 type Props = {
     departamento: typeof departamentos[string];
     section: string;
+    id: number;
+    openDepModal: (section: string) => void;
 }
 
-export default function DetailDepartamento({ departamento, section }: Props) {
+export default function DetailDepartamento({ departamento, section, id, openDepModal }: Props) {
     return <div
         id={section}
         className="
@@ -104,17 +106,23 @@ export default function DetailDepartamento({ departamento, section }: Props) {
                 }
             </div>
 
-            <div className="flex-grow rounded-lg">
-                <img
-                    src={departamento.img}
-                    loading="lazy"
-                    alt={"Imagén departamento"}
-                    width={"100%"}
-
-                    className="object-cover object-center w-full"
-                />
+            <div className="flex-grow flex flex-col items-center gap-4 rounded-lg h-5/6">
+                <div className="h-5/6 w-full flex justify-center">
+                    <img
+                        src={departamento.img}
+                        loading="lazy"
+                        alt={"Imagén departamento"}
+                        height={"100%"}
+                        className="object-cover object-center h-full"
+                    />
+                </div>
+                <button
+                    className="bg-naranja text-blanco px-4 py-2 rounded-lg hover:scale-110 transition-all duration-200 uppercase tracking-wide"
+                    onClick={() => openDepModal(section)}
+                >
+                    Plano llave
+                </button>
             </div>
         </div>
-
     </div>
 }
