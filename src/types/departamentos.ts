@@ -11,8 +11,8 @@ type Departamento = {
     cuarto_lavado: boolean,
     closet_lavado: boolean,
     estudio: boolean,
+    plano_llave: string,
 }
-
 
 export const departamentos: Record<string, Departamento> = {
     A: {
@@ -27,6 +27,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: true,
         closet_lavado: false,
         estudio: false,
+        plano_llave: "/planos_llave/PTLL-A.jpg"
     },
     B: {
         area: 82.3,
@@ -40,6 +41,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: true,
         closet_lavado: false,
         estudio: false,
+        plano_llave: "/planos_llave/PTLL-B.jpg"
     },
     C1: {
         area: 62.97,
@@ -53,6 +55,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: true,
         closet_lavado: false,
         estudio: true,
+        plano_llave: "/planos_llave/PTLL-C1.jpg"
     },
     C2: {
         area: 62.47,
@@ -66,6 +69,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: true,
         closet_lavado: false,
         estudio: false,
+        plano_llave: "/planos_llave/PTLL-C2.jpg"
     },
     C3: {
         area: 63.43,
@@ -79,6 +83,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: true,
         closet_lavado: false,
         estudio: false,
+        plano_llave: "/planos_llave/PTLL-C3.jpg"
     },
     D: {
         area: 60.41,
@@ -92,6 +97,7 @@ export const departamentos: Record<string, Departamento> = {
         cuarto_lavado: false,
         closet_lavado: true,
         estudio: false,
+        plano_llave: "/planos_llave/PTLL-D.jpg"
     },
     E: {
         area: 82.07,
@@ -106,5 +112,6 @@ export const departamentos: Record<string, Departamento> = {
         closet_lavado: false,
         estudio: false,
         area_terraza: 26.33,
+        plano_llave: "/planos_llave/PTLL-E.jpg"
     },
 }
