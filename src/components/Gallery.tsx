@@ -5,8 +5,6 @@ export default function Gallery() {
   const [open, setOpen] = useState(false);
   const [img, setImg] = useState<string | null>(null);
 
-  console.log(img, open)
-
   function openModal(img: string) {
     return () => {
       setImg(img);
