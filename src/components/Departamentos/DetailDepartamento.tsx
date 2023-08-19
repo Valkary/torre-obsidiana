@@ -22,7 +22,7 @@ export default function DetailDepartamento({ departamento, section, id, openDepM
         className="
             overflow-x-hidden flex flex-col justify-center items-center shadow-md px-5 py-8 rounded-lg w-full bg-white
             md:w-5/6 md:h-5/6
-            lg:w-[600px] lg:h-[550px] lg:flex-grow lg:overflow-y-hidden
+            lg:w-[400px] lg:h-[400px] lg:overflow-y-hidden
         "
     >
         <div className="w-full h-[66px] flex items-center uppercase">
@@ -34,78 +34,6 @@ export default function DetailDepartamento({ departamento, section, id, openDepM
         </div>
 
         <div className="flex flex-col md:flex-row w-full h-full">
-            <div className="w-full md:w-1/2 flex-col flex gap-2 mt-4">
-                <div className="w-full flex h-14 gap-2 items-center">
-                    <Apartment color="black" />
-                    <div className="flex flex-col text-left">
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Unidades</p>
-                        <p>{departamento.unidades} disponible{departamento.unidades >= 2 ? "s" : ""}</p>
-                    </div>
-                </div>
-
-                <div className="w-full flex h-14 gap-2 items-center">
-                    <Bedroom color="black" />
-                    <div className="flex flex-col text-left">
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Recámaras</p>
-                        <p>{departamento.recamaras} recámara{departamento.recamaras >= 2 ? "s" : ""}</p>
-                    </div>
-                </div>
-
-                <div className="w-full flex h-14 gap-2 items-center">
-                    <Bathroom color="black" />
-                    <div className="flex flex-col text-left">
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Baños</p>
-                        <p>{departamento.bathrooms} baño{departamento.bathrooms >= 2 ? "s" : ""}</p>
-                    </div>
-                </div>
-
-                <div className="w-full flex h-14 gap-2 items-center">
-                    <Parking color="black" />
-                    <div className="flex flex-col text-left">
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Estacionamiento</p>
-                        <p>{departamento.estacionamiento} caj{departamento.estacionamiento >= 2 ? "ones" : "ón"}</p>
-                    </div>
-                </div>
-
-                {departamento.area_terraza &&
-                    <div className="w-full flex h-14 gap-2 items-center">
-                        <Terrace color="black" />
-                        <div className="flex flex-col text-left">
-                            <p className="text-gray-400 font-bold tracking-wider uppercase">Terraza</p>
-                            <p>{departamento.area_terraza} m<sup>2</sup></p>
-                        </div>
-                    </div>
-                }
-
-                {departamento.sala_comedor &&
-                    <div className="w-full flex h-14 gap-2 items-center">
-                        <DiningRoom color="black" />
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Sala comedor</p>
-                    </div>
-                }
-
-                {departamento.cuarto_lavado &&
-                    <div className="w-full flex h-14 gap-2 items-center">
-                        <WashingMachine color="black" />
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Cuarto de lavado</p>
-                    </div>
-                }
-
-                {departamento.estudio &&
-                    <div className="w-full flex h-14 gap-2 items-center">
-                        <Studio color="black" />
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Estudio</p>
-                    </div>
-                }
-
-                {departamento.closet_lavado &&
-                    <div className="w-full flex h-14 gap-2 items-center">
-                        <IronBoard color="black" />
-                        <p className="text-gray-400 font-bold tracking-wider uppercase">Clóset de lavado</p>
-                    </div>
-                }
-            </div>
-
             <div className="flex-grow flex flex-col items-center gap-4 rounded-lg h-5/6">
                 <div className="h-5/6 w-full flex justify-center">
                     <img

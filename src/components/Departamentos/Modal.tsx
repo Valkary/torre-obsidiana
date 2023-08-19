@@ -121,8 +121,8 @@ export default function Modal() {
                                 }
                             </div>
 
-                            <div className="lg:w-1/2 lg:max-h-full flex flex-col lg:flex-row justify-center items-center">
-                                <div className="h-5/6 w-full flex justify-center">
+                            <div className="lg:w-1/2 lg:max-h-full flex flex-col lg:flex-row lg:items-end justify-center items-center">
+                                <div className="h-5/6 flex justify-center lg:h-full lg:items-center">
                                     <img
                                         src={dep.img}
                                         loading="lazy"
@@ -132,13 +132,11 @@ export default function Modal() {
                                     />
                                 </div>
 
-                                <div className="h-5/6 w-full flex justify-center">
+                                <div className="h-5/6 flex justify-center lg:w-1/3">
                                     <img
                                         src={dep.plano_llave}
                                         loading="lazy"
                                         alt={"Plano llave"}
-                                        height={"100%"}
-                                        className="object-cover object-center h-full"
                                     />
                                 </div>
                             </div>

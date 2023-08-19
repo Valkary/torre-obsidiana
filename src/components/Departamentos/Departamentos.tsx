@@ -3,7 +3,7 @@ import DetailDepartamento from "./DetailDepartamento";
 
 export default function Departamentos({ }) {
     const entries = Object.entries(departamentos);
-    
+
     function openDepModal(departamento: string) {
         if (document) {
             const modal = document.querySelector("#modal-departamento");
@@ -18,10 +18,10 @@ export default function Departamentos({ }) {
         <div
             className="
                     w-full max-w-full flex flex-col justify-center items-center my-10
-                    lg:max-w-7xl lg:flex-row lg:flex-wrap lg:gap-4 lg:justify-evenly
+                    lg:max-w-7xl lg:flex-row lg:flex-wrap lg:gap-2 lg:justify-evenly
                 "
         >
-            {entries.map((entry, id) => 
+            {entries.map((entry, id) =>
                 <DetailDepartamento
                     key={id}
                     id={id}
