@@ -60,7 +60,7 @@ export default function Carrousel({ slides }: Props) {
                     >
                         <img
                             src={slide.img}
-                            className="object-cover object-bottom"
+                            className="object-cover object-center"
                             alt="..."
                         />
                         <div
