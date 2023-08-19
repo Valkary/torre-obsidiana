@@ -9,7 +9,7 @@ export default function Modal({ isOpen, img, closeModal }: Props) {
         <div className="fixed inset-0 bg-gris bg-opacity-75 transition-opacity w-screen h-screen flex justify-center items-center">
             <div className="bg-blanco max-w-full h-full overflow-x-hidden rounded-lg m-auto lg:h-5/6 lg:w-5/6 flex flex-col px-5 py-5 overflow-y-scroll lg:overflow-hidden">
                 <div className="flex flex-wrap">
-                    <h1 className="font-bold tracking-wide uppercase grow text-5xl">{`Departamento tipo`}</h1>
+                    <span className="flex-grow" />
                     <button onClick={closeModal} className="bg-red-500 hover:bg-red-300 rounded-full w-8 h-8 text-center justify-center items-center text-blanco hidden lg:block">
                         x
                     </button>

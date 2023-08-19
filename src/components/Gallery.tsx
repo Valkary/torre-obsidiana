@@ -120,10 +120,6 @@ export default function Gallery() {
               src="/TERRAZA_1.0001.png"
               loading="lazy"
             />
-            <div id="myModal" className="modal">
-              <span className="close">&times;</span>
-              <img className="modal-content" id="modalImg" />
-            </div>
           </div>
         </div>
       </div>
