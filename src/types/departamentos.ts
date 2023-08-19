@@ -112,6 +112,6 @@ export const departamentos: Record<string, Departamento> = {
         closet_lavado: false,
         estudio: false,
         area_terraza: 26.33,
-        plano_llave: "/planos_llave/PTLL-E.jpg"
+        plano_llave: "/planos_llave/PBLL-UE.jpg"
     },
 }
