@@ -1,13 +1,4 @@
 import type { departamentos } from "../../types/departamentos"
-import Apartment from "../Icons/Apartment";
-import Bathroom from "../Icons/Bathroom";
-import Bedroom from "../Icons/Bedroom";
-import DiningRoom from "../Icons/DiningRoom";
-import IronBoard from "../Icons/IronBoard";
-import Parking from "../Icons/Parking";
-import Studio from "../Icons/Studio";
-import Terrace from "../Icons/Terrace";
-import WashingMachine from "../Icons/WashingMachine";
 
 type Props = {
     departamento: typeof departamentos[string];
