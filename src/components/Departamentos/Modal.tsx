@@ -9,6 +9,10 @@ import DiningRoom from "../Icons/DiningRoom";
 import WashingMachine from "../Icons/WashingMachine";
 import Studio from "../Icons/Studio";
 import IronBoard from "../Icons/IronBoard";
+import React from "react";
+
+
+
 
 export default function Modal() {
     const [departamento, setDepartamento] = useState<string | null>(null);
@@ -27,6 +31,7 @@ export default function Modal() {
         }, 50);
         return () => clearInterval(interval);
     }, []);
+
 
     function closeModal() {
         if (document) {
@@ -147,6 +152,7 @@ export default function Modal() {
                         <p>Error</p>
                     }
                 </div>
+                
 
                 <div className="flex lg:hidden justify-center">
                     <button onClick={closeModal} className="bg-red-500 hover:bg-red-300 rounded-lg w-16 h-8 text-center justify-center items-center text-blanco">
