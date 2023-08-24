@@ -32,21 +32,16 @@ const carrousel_slides: Slides[] = [
     
     <Carrousel slides={carrousel_slides} client:idle />
 
-    
-
-    <div class="max-w-3xl my-5 tracking-wider text-3xl font-bold my-5 uppercase text-center">
-      <h3>"Planta tipo"</h3>
+    <div class="max-w-3xl tracking-wider text-3xl font-bold my-5 uppercase text-center">
+      <h3 class="uppercase -tracking-wide">Planta tipo</h3>
       <img
         loading="lazy"
         src="PT.jpg"
         width="100%"
         class="object-cover object-center w-full rounded-lg"
       />
-      <h3>"NIVEL 1-9"</h3>
+      <h3 class="uppercase -tracking-wide">NIVEL 1-9</h3>
     </div>
-    
-
-
 
     <ListaDepartamentos client:visible />
   </div>
