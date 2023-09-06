@@ -38,7 +38,7 @@ export default function Modal() {
 
     return <div id="modal-departamento" className="absolute z-10 top-0 left-0 w-screen h-screen hidden transition-all duration-300 gotham" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div className="fixed inset-0 bg-gris bg-opacity-75 transition-opacity w-screen h-screen flex justify-center items-center">
-            <div className="bg-blanco w-full h-full max-w-full rounded-lg m-auto lg:h-5/6 lg:w-5/6 flex flex-col overflow-y-scroll lg:overflow-hidden relative overflow-x-hidden py-5">
+            <div className="bg-blanco w-full h-full max-w-full rounded-lg m-auto lg:h-5/6 lg:w-5/6 flex flex-col overflow-y-scroll lg:overflow-hidden relative overflow-x-hidden py-5 lg:py-0">
                 <div className="flex flex-wrap lg:absolute w-full max-w-full px-5 py-2 z-50">
                     <h1 className="font-bold tracking-wide uppercase grow text-3xl md:text-4xl lg:text-5xl max-w-full">{`Departamento tipo ${departamento}`}</h1>
                     <button onClick={closeModal} className="bg-red-500 hover:bg-red-300 rounded-full w-8 h-8 text-center justify-center items-center text-blanco hidden lg:block border border-red-600">
