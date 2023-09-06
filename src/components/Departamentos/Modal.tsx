@@ -39,7 +39,7 @@ export default function Modal() {
     return <div id="modal-departamento" className="absolute z-10 top-0 left-0 w-screen h-screen hidden transition-all duration-300" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div className="fixed inset-0 bg-gris bg-opacity-75 transition-opacity w-screen h-screen flex justify-center items-center">
             <div className="bg-blanco w-full h-full overflow-x-hidden rounded-lg m-auto lg:h-5/6 lg:w-5/6 flex flex-col overflow-y-scroll lg:overflow-hidden relative">
-                <div className="flex flex-wrap absolute w-full px-5 py-2 z-50">
+                <div className="flex flex-wrap lg:absolute w-full px-5 py-2 z-50">
                     <h1 className="font-bold tracking-wide uppercase grow text-5xl">{`Departamento tipo ${departamento}`}</h1>
                     <button onClick={closeModal} className="bg-red-500 hover:bg-red-300 rounded-full w-8 h-8 text-center justify-center items-center text-blanco hidden lg:block border border-red-600">
                         x
@@ -129,19 +129,20 @@ export default function Modal() {
                                         <p className="text-gray-400 font-bold tracking-wider uppercase text-2xl">Clóset de lavado</p>
                                     </div>
                                 }
+                            </div>
 
-                                {/* <div className="lg:w-1/2 lg:h-full flex flex-col lg:flex-row lg:items-end justify-center items-center lg:overflow-hidden">
-
-                                <div className="h-5/6 flex justify-center lg:w-1/3">
+                            <div className="bg-naranja flex-col justify-center items-center flex
+                                lg:hidden lg:w-1/2 lg:h-full lg:flex-row lg:items-end lg:overflow-hidden
+                            ">
+                                <div className="h-full lg:w-2/3 flex justify-center lg:h-full lg:items-center">
                                     <img
                                         src={dep.plano_llave}
                                         loading="lazy"
-                                        alt={"Plano llave"}
+                                        alt={"Imagén departamento"}
                                         width={"120%"}
                                         className="object-cover object-center"
                                     />
                                 </div>
-                            </div> */}
                             </div>
 
                             <div className="bg-naranja flex flex-col justify-center items-center
