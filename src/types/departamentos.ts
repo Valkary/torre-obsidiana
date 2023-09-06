@@ -40,7 +40,7 @@ export const departamentos: Record<string, Departamento> = {
         sala_comedor: true,
         cuarto_lavado: true,
         closet_lavado: false,
-        estudio: false,
+        estudio: true,
         plano_llave: "/planos_llave/PTLL-B.jpg"
     },
     C1: {
@@ -68,7 +68,7 @@ export const departamentos: Record<string, Departamento> = {
         sala_comedor: true,
         cuarto_lavado: true,
         closet_lavado: false,
-        estudio: false,
+        estudio: true,
         plano_llave: "/planos_llave/PTLL-C2.jpg"
     },
     C3: {
@@ -82,7 +82,7 @@ export const departamentos: Record<string, Departamento> = {
         sala_comedor: true,
         cuarto_lavado: true,
         closet_lavado: false,
-        estudio: false,
+        estudio: true,
         plano_llave: "/planos_llave/PTLL-C3.jpg"
     },
     D: {
