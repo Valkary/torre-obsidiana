@@ -38,12 +38,7 @@ export default function Modal() {
 
     return <div id="modal-departamento" className="absolute z-10 top-0 left-0 w-screen h-screen hidden transition-all duration-300 gotham" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div className="fixed inset-0 bg-gris bg-opacity-75 transition-opacity w-screen h-screen flex justify-center items-center">
-            <div className="bg-blanco w-full h-full max-w-full rounded-lg m-auto lg:h-5/6 lg:w-5/6 flex flex-col overflow-y-scroll lg:overflow-hidden relative overflow-x-hidden py-5 lg:py-0">
-                <div className="flex flex-wrap lg:absolute w-full max-w-full px-5 py-2 z-50">
-                    <h1 className="font-bold tracking-wide uppercase lg:w-1/2 text-3xl md:text-4xl lg:text-5xl max-w-full">{`Departamento tipo ${departamento}`}</h1>
-                    <span className="hidden lg:flex lg:flex-grow" />
-                </div>
-
+            <div className="bg-blanco w-full h-full max-w-full rounded-lg m-auto lg:h-[90%] lg:w-5/6 flex flex-col overflow-y-scroll lg:overflow-hidden relative overflow-x-hidden py-5 lg:py-0">
                 <div className="lg:h-full w-full justify-center items-center">
                     {dep ?
                         <div className="flex flex-col md:flex-row w-full h-full justify-center items-center relative">
@@ -57,7 +52,9 @@ export default function Modal() {
                                 />
                             </div>
 
-                            <div className="w-full md:w-1/2 flex-col flex justify-evenly gap-4 mt-4 h-[80%] pl-5 md:pl-10">
+                            <div className="w-full md:w-1/2 flex-col flex justify-evenly gap-4 h-[80%] pl-5 md:pl-10">
+                                <h1 className="font-bold tracking-wide uppercase lg:w-1/2 text-3xl md:text-4xl lg:text-5xl max-w-full mt-2 mb-4">{`Departamento tipo ${departamento}`}</h1>
+
                                 <div className="w-full flex h-14 gap-2 items-center">
                                     <Apartment color="black" />
                                     <div className="flex flex-col text-left">
