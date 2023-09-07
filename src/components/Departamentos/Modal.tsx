@@ -47,7 +47,7 @@ export default function Modal() {
                 <div className="lg:h-full w-full justify-center items-center">
                     {dep ?
                         <div className="flex flex-col md:flex-row w-full h-full justify-center items-center relative">
-                            <div className="h-44 hidden lg:flex justify-center absolute bottom-10 lg:right-[45%] xl:right-[50%]">
+                            <div className="h-44 hidden lg:flex justify-center absolute bottom-10 right-1/2 lg:right-[45%] xl:right-[50%]">
                                 <img
                                     src={dep.plano_llave}
                                     loading="lazy"
@@ -136,7 +136,7 @@ export default function Modal() {
                                     <img
                                         src={dep.plano_llave}
                                         loading="lazy"
-                                        alt={"Imagén departamento"}
+                                        alt={"Plano llave"}
                                         width={"120%"}
                                         className="object-cover object-center"
                                     />
