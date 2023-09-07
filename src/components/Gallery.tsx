@@ -122,33 +122,38 @@ export default function Gallery() {
         </div>
       </div>
       <div className="-m-1 flex flex-wrap md:-m-2">
+        <div className="w-full p-1 md:p-2">
+          <img
+            onClick={openModal('/PETPARK_1.0000.png')}
+            alt="gallery"
+            className="block cursor-pointer rounded-lg object-cover object-center"
+            src="/PETPARK_1.0000.png"
+            width={"100%"}
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div className="-m-1 flex flex-wrap md:-m-2">
         <div className="flex w-1/2 flex-wrap">
           <div className="w-full p-1 md:p-2 max-h-full overflow-hidden">
             <img
               onClick={openModal('/Exterior2.0000.png')}
               alt="gallery"
-              className="block cursor-pointer h-full rounded-lg object-cover object-center"
+              className="block cursor-pointer rounded-lg object-cover object-center max-h-[650px]"
               src="/Exterior2.0000.png"
+              width={"100%"}
               loading="lazy"
             />
           </div>
         </div>
         <div className="flex w-1/2 flex-wrap">
-          <div className="w-full p-1 md:p-2">
-            <img
-              onClick={openModal('/PETPARK_1.0000.png')}
-              alt="gallery"
-              className="block cursor-pointer h-full w-full rounded-lg object-cover object-center"
-              src="/PETPARK_1.0000.png"
-              loading="lazy"
-            />
-          </div>
-          <div className="w-full p-1 md:p-2 max-h-full overflow-hidden">
+          <div className="w-full p-1 md:p-2 h-full overflow-hidden">
             <img
               onClick={openModal('/Exterior3.0000.png')}
               alt="gallery"
-              className="block cursor-pointer h-full rounded-lg object-cover object-center"
+              className="block cursor-pointer rounded-lg object-cover object-center max-h-[650px]"
               src="/Exterior3.0000.png"
+              width={"100%"}
               loading="lazy"
             />
           </div>
