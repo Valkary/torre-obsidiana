@@ -47,7 +47,7 @@ export default function Modal() {
                                     src={dep.plano_llave}
                                     loading="lazy"
                                     alt={"Plano llave"}
-                                    width={"100%"}
+                                    width={"175"}
                                     className="object-cover object-center"
                                 />
                             </div>
