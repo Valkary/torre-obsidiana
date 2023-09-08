@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Modal from "./Gallery/Modal";
 
+
+
 export default function Gallery() {
   const [open, setOpen] = useState(false);
   const [img, setImg] = useState<string | null>(null);
@@ -11,7 +13,7 @@ export default function Gallery() {
       setOpen(true);
     }
   }
-
+  
   function closeModal() {
     setImg(null);
     setOpen(false);
