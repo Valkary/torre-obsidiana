@@ -8,16 +8,16 @@ export const main_nav_links = [
         url: "/#departamentos"
     },
     {
-        name: "Amenidades",
-        url: "/#amenidades"
+        name: "Galeria",
+        url: "/galeria"
     },
     {
         name: "Ubicación",
         url: "/#ubicacion"
     },
     {
-        name: "Galería",
-        url: "/galeria"
+        name: "Amenidades",
+        url: "/#amenidades"
     },
     {
         name: "Contacto",
