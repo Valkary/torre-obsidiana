@@ -15,7 +15,7 @@ type Departamento = {
 }
 export const departamentos: Record<string, Departamento> = {
     A: {
-        area: 75.68,
+        area: 75.9,
         unidades: 9,
         recamaras: 2,
         bathrooms: 2,
@@ -29,7 +29,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-A.jpg"
     },
     B: {
-        area: 82.3,
+        area: 82.7,
         unidades: 9,
         recamaras: 2,
         bathrooms: 2,
@@ -43,7 +43,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-B.jpg"
     },
     C1: {
-        area: 62.97,
+        area: 63.3,
         unidades: 9,
         recamaras: 1,
         bathrooms: 1,
@@ -57,7 +57,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-C1.jpg"
     },
     C2: {
-        area: 62.47,
+        area: 62.3,
         unidades: 9,
         recamaras: 1,
         bathrooms: 1,
@@ -71,7 +71,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-C2.jpg"
     },
     C3: {
-        area: 63.43,
+        area: 63.2,
         unidades: 9,
         recamaras: 1,
         bathrooms: 1,
@@ -85,7 +85,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-C3.jpg"
     },
     D: {
-        area: 60.41,
+        area: 59.7,
         unidades: 9,
         recamaras: 1,
         bathrooms: 1,
@@ -99,7 +99,7 @@ export const departamentos: Record<string, Departamento> = {
         plano_llave: "/planos_llave/PTLL-D.jpg"
     },
     E: {
-        area: 82.07,
+        area: 81.9,
         unidades: 1,
         recamaras: 2,
         bathrooms: 2,
